@@ -1,0 +1,13 @@
+@import url("/public/styles/landingpage.css");
+@import url("/public/styles/navigations/nav-bar.css");
+@import url("/public/styles/contact-options/form.css");
+@import url("/public/styles/country/country.css");
+@import url("/public/styles/country/college.css");
+@import url("/public/styles/description/about-us.css");
+@import url("/public/styles/navigations/countries.css");
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}

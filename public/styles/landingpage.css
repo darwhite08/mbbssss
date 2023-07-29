@@ -1,0 +1,18 @@
+.landing-page{
+    height: 1000px;
+}
+.right-grid{
+    background-image: url('/public/media-source/svg/blob.svg');
+    background-repeat: no-repeat;
+}
+.hero-section{
+    background-image: url("/public/media-source/svg/wave.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.hero-container-1{
+    background-image:url('/public/media-source/illustrations/illustration09.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

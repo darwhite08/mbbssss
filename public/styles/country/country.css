@@ -1,0 +1,45 @@
+.country-name-container{
+    background-image: url("/public/media-source/illustraion-countries/undraw_best_place_re_lne9.svg"),url("/public/media-source/illustraion-countries/undraw_building_re_xfcm.svg"),url("/public/media-source/illustraion-countries/undraw_city_girl_ccpd.svg");
+    background-repeat: no-repeat,no-repeat,no-repeat;
+    background-size: contain,contain,contain;
+    background-position: left,right,center;
+}
+
+/* table styling for college name and medium of teaching */
+#collage-table{
+    border-collapse:collapse;
+}
+#collage-table td,#collage-table th{
+border: 1px solid rgb(202, 201, 201);
+padding: 10px;
+}
+#collage-table tr:nth-child(even){background-color: #f2f2f2;}
+
+#collage-table tr:hover {background-color: #ddd;}
+#collage-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+
+#Accomandation-table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#Accomandation-table td, #Accomandation-table th{
+    border: 1px solid rgb(194, 193, 193);
+    padding: 10px;
+}
+#Accomandation-table tr:nth-child(even){background-color: #f2f2f2;}
+#Accomandation-table tr:hover {background-color:#ddd;}
+
+#Accomandation-table th{
+padding-top:12px ;
+padding-bottom:12px ;
+text-align: left;
+background-color: #04AA6D;
+color: white;
+}

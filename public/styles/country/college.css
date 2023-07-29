@@ -1,0 +1,16 @@
+#college-description-table {
+    border-collapse: collapse;
+}
+
+#college-description-table th,
+#college-description-table td {
+    border: 1px solid rgb(202, 201, 201);
+    padding: 10px;
+}
+#college-description-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
