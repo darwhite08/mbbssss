@@ -17,6 +17,9 @@ app.get('/', function(req, res) {
 app.get('/serbia', function(req, res) {
     res.render('countries/serbia/Serbia');
 });
+app.get('/serbia/UONFOM', function(req, res) {
+    res.render('countries/serbia/colleges/uonfom');
+});
 app.all('*', (req, res) => {
     res.render('error');
 })
