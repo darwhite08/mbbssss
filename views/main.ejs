@@ -1,11 +1,12 @@
 <%- include('main-comp/header'); -%>
   <!-- Navigation bar -->
   <%- include('navigations/nav-bar'); -%>
-    <div class="container hero-section flex  flex-col lg:flex-row md:flew-row ">
+    <div class="container md:my-10 lg:my-14 mx-auto hero-section flex flex-col lg:flex-row md:flew-row bg-slate-50 ">
       <div class=" lg:basis-1/2 md:basis-1/2 sm:basis-1 flex flex-col justify-center ">
-        <div class="hero-container-1 ">
-          <div class="bg-white/50  backdrop-blur-lg  rounded-lg px-10 py-5 ">
-            <h1 class="text-slate-600 text-lg md:text-4xl lg:text-4xl font-bold mb-4 font-serif">MEDPLASIA MEDICOS PVT LTD</h1>
+        <div class="hero-container-1 m-10">
+          <div class="bg-slate-300/30  backdrop-blur-lg rounded-lg px-4 py-6 md:p-10 lg:p-10">
+            <h1 class="text-slate-600 text-lg md:text-4xl lg:text-4xl font-bold mb-4 font-serif">MEDPLASIA MEDICOS PVT
+              LTD</h1>
             <p class=" font-serif text-slate-600 text-lg text-justify">MEDPLASIA provides excellent opportunities for
               medical students to pursue their MBBS studies abroad. Many young individuals now aspire to study MBBS in
               foreign countries like Serbia, Russia, Kazakstan , Belarus, Krygzstan, and various countries. Contrary to
@@ -22,21 +23,42 @@
               <li>300+ satisfied student studying abroad</li>
               <li>A team of doctors working hard 24*7</li>
             </ul>
-            <div class="mt-0 items-center mt-5 mr-auto ">
+            <div class=" items-center mx-auto mt-4">
               <button class="py-2 px-4 bg-slate-800 rounded-lg text-white"> <i class="fa-solid fa-phone "></i> Call us
               </button>
-              <button class="py-2 px-4 bg-slate-800 rounded-lg text-white"><i class="fa-brands fa-whatsapp text-white"></i> Whatsapp</button>
+              <button class="py-2 px-4 bg-slate-800 rounded-lg text-white"><i
+                  class="fa-brands fa-whatsapp text-white"></i> Whatsapp</button>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="hero-container-2 basis-1 lg:basis-1/2 md:basis-1/2 sm:basis-1 flex justify-center ">
-        <%- include('contact-options/form'); -%>
+      <!-- Form container -->
+      <div class=" lg:basis-1/2 md:basis-1/2 sm:basis-1 flex flex-col justify-center ">
+        <div class="hero-container-2 h-full m-10">
+          <div
+            class="form-container backdrop-blur-lg h-full shadow-xl rounded-lg flex   bg-slate-300/30 ">
+            <div class="bg-white p-10 my-auto rounded-lg mx-auto flex flex-col justify-center items-center">
+              <h1 class=" font-bold text-xl md:text-2xl lg:text-2xl text-slate-600">Please fill the form</h1>
+              <form action="" class="flex flex-col items-center  ">
+                <input class="rounded-md border-2 border-indigo-300 border-solid mb-2" type="text" id="fname"
+                  name="firstname" placeholder="First Name">
+                <input class="rounded-md border-2 border-indigo-300 border-solid mb-2" type="text" id="lname"
+                  name="lastname" placeholder="Last Name">
+                <input class="rounded-md border-2 border-indigo-300 border-solid mb-2" type="text" id="city" name="city"
+                  placeholder="City Name">
+                <input class="rounded-md border-2 border-indigo-300 border-solid mb-2" type="text" id="pnumber"
+                  name="phonenumber" placeholder="Phone Number">
+                <textarea class="rounded-md border-2 border-indigo-300 border-solid mb-2" name="message" id="message"
+                  aria-rowspan="" rows="6" placeholder="Message"></textarea>
+                <button class="bg-white px-5 py-1 rounded-lg">submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Floating social media links -->
-    <%- include('navigations/sticky-social-bar'); -%>
+    <!-- <%- include('navigations/sticky-social-bar'); -%> -->
     <!-- About us -->
     <div>
       <%- include('description/about-us'); -%>
@@ -52,8 +74,9 @@
         <h1 class="text-3xl font-medium title-font text-gray-900 mb-12 text-center">Testimonials</h1>
         <div class="md:grid md:grid-cols-2 lg:grid lg:grid-cols-2 flex flex-wrap ">
 
-          <div class="m-2 rounded-lg shadow-md" style="background: url(/public/media-source/illustrations/undraw_woman_ffrd.svg) no-repeat center ; background-size: contain;">
-            <div class="h-full bg-gray-100/30 backdrop-blur-2xl p-8 rounded " >
+          <div class="m-2 rounded-lg shadow-md"
+            style="background: url(/public/media-source/illustrations/undraw_woman_ffrd.svg) no-repeat center ; background-size: contain;">
+            <div class="h-full bg-gray-100/30 backdrop-blur-2xl p-8 rounded ">
               <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4"
                 viewBox="0 0 975.036 975.036">
                 <path
@@ -63,8 +86,10 @@
               <p class="leading-relaxed mb-6">I thank medplasia medicos to channelise my energy in the right direction
                 by providing me the path which let my childhood dream of getting a MBBS degree possible. <br>
                 Moreover, I got a lot of exposure in the foreign land which not only improves my confidence but my
-                communication skills as well. Without Mediplasia MEDICOS , It would be impposible to Establish Ourselves
-                <br> I personally want to thank this consultancy who always electrify the spark in me to study and crack
+                communication skills as well. Without Mediplasia MEDICOS , It would be impposible to Establish
+                Ourselves
+                <br> I personally want to thank this consultancy who always electrify the spark in me to study and
+                crack
                 the license exams of our repective country. I feel so blessed to be a part of it.
               </p>
               <a class="inline-flex items-center">
@@ -78,8 +103,9 @@
             </div>
           </div>
 
-          <div class="m-2 rounded-lg shadow-md" style="background: url(/public/media-source/illustrations/undraw_woman_ffrd.svg) no-repeat center ; background-size: contain;">
-            <div class="h-full bg-gray-100/30 backdrop-blur-2xl p-8 rounded " >
+          <div class="m-2 rounded-lg shadow-md"
+            style="background: url(/public/media-source/illustrations/undraw_woman_ffrd.svg) no-repeat center ; background-size: contain;">
+            <div class="h-full bg-gray-100/30 backdrop-blur-2xl p-8 rounded ">
               <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4"
                 viewBox="0 0 975.036 975.036">
                 <path
@@ -100,18 +126,21 @@
                 </span>
               </a>
             </div>
-          </div>   
-    
-          <div class="m-2 rounded-lg shadow-md" style="background: url(/public/media-source/illustrations/undraw_woman_ffrd.svg) no-repeat center ; background-size: contain;">
-            <div class="h-full bg-gray-100/30 backdrop-blur-2xl p-8 rounded " >
+          </div>
+
+          <div class="m-2 rounded-lg shadow-md"
+            style="background: url(/public/media-source/illustrations/undraw_woman_ffrd.svg) no-repeat center ; background-size: contain;">
+            <div class="h-full bg-gray-100/30 backdrop-blur-2xl p-8 rounded ">
               <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4"
                 viewBox="0 0 975.036 975.036">
                 <path
                   d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
                 </path>
               </svg>
-              <p class="leading-relaxed mb-6">Hello I am cheshta Shukla, I am now in 2nd year and I am pursuing my mbbs
-                from one ot the most well known and bestest university of Ukraine, Uzzhorod National university. <br> I
+              <p class="leading-relaxed mb-6">Hello I am cheshta Shukla, I am now in 2nd year and I am pursuing my
+                mbbs
+                from one ot the most well known and bestest university of Ukraine, Uzzhorod National university. <br>
+                I
                 came here with the reference of Mediplasia medicos which is most worth believing and admirable company
                 for admission abroad. <br> If you want to secure your carrer in mbbs I will suggest you very well that
                 you go to Mediplasia Medicos.</p>
@@ -125,9 +154,10 @@
               </a>
             </div>
           </div>
-  
-          <div class="m-2 rounded-lg shadow-md" style="background: url(/public/media-source/illustrations/undraw_woman_ffrd.svg) no-repeat center ; background-size: contain;">
-            <div class="h-full bg-gray-100/30 backdrop-blur-2xl p-8 rounded " >
+
+          <div class="m-2 rounded-lg shadow-md"
+            style="background: url(/public/media-source/illustrations/undraw_woman_ffrd.svg) no-repeat center ; background-size: contain;">
+            <div class="h-full bg-gray-100/30 backdrop-blur-2xl p-8 rounded ">
               <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4"
                 viewBox="0 0 975.036 975.036">
                 <path
@@ -147,18 +177,24 @@
               </a>
             </div>
           </div>
-  
-          <div class="m-2 rounded-lg shadow-md" style="background: url(/public/media-source/illustrations/undraw_woman_ffrd.svg) no-repeat center ; background-size: contain;">
-            <div class="h-full bg-gray-100/30 backdrop-blur-2xl p-8 rounded " >
+
+          <div class="m-2 rounded-lg shadow-md"
+            style="background: url(/public/media-source/illustrations/undraw_woman_ffrd.svg) no-repeat center ; background-size: contain;">
+            <div class="h-full bg-gray-100/30 backdrop-blur-2xl p-8 rounded ">
               <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4"
                 viewBox="0 0 975.036 975.036">
                 <path
                   d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
                 </path>
               </svg>
-              <p class="leading-relaxed mb-6">This is Nirdesh Dosi, a student of Ternopil National Medical university, Ukraine. The dream of studying abroad would not have been possible if Mediplasia medicos was not there to help me. <br>
-              Under the Guidence of Dr. Vijay sir I gathered strength to dream and pursue my goals of becoming a good doctor. Mediplasia Medico helps the students in each and every aspect of their lives. <br>
-            It lays down the foundation for it students to crack registration exams like MCI,PLAB,USMLE I feel so lucy to be a part of this great team and would like to suggest Mediplasia Medicos for all the students who want to commence there study abroad.</p>
+              <p class="leading-relaxed mb-6">This is Nirdesh Dosi, a student of Ternopil National Medical university,
+                Ukraine. The dream of studying abroad would not have been possible if Mediplasia medicos was not there
+                to help me. <br>
+                Under the Guidence of Dr. Vijay sir I gathered strength to dream and pursue my goals of becoming a
+                good doctor. Mediplasia Medico helps the students in each and every aspect of their lives. <br>
+                It lays down the foundation for it students to crack registration exams like MCI,PLAB,USMLE I feel so
+                lucy to be a part of this great team and would like to suggest Mediplasia Medicos for all the students
+                who want to commence there study abroad.</p>
               <a class="inline-flex items-center">
                 <img alt="testimonial" src="/public/media-source/avtar-illustration/male.svg"
                   class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
@@ -169,9 +205,10 @@
               </a>
             </div>
           </div>
-  
-          <div class="m-2 rounded-lg shadow-md" style="background: url(/public/media-source/illustrations/undraw_woman_ffrd.svg) no-repeat center ; background-size: contain;">
-            <div class="h-full bg-gray-100/30 backdrop-blur-2xl p-8 rounded " >
+
+          <div class="m-2 rounded-lg shadow-md"
+            style="background: url(/public/media-source/illustrations/undraw_woman_ffrd.svg) no-repeat center ; background-size: contain;">
+            <div class="h-full bg-gray-100/30 backdrop-blur-2xl p-8 rounded ">
               <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4"
                 viewBox="0 0 975.036 975.036">
                 <path
@@ -196,36 +233,36 @@
       </div>
     </section>
 
-        <!-- Statics -->
-        <section class="text-gray-600 body-font mx-10 mb-10 ">
-          <div class="flex justify-center">
-            <h1 class="font-bold font-serif text-4xl py-10">More About our team and clients</h1>
+    <!-- Statics -->
+    <section class="text-gray-600 body-font mx-10 mb-10 ">
+      <div class="flex justify-center">
+        <h1 class="font-bold font-serif text-4xl py-10">More About our team and clients</h1>
+      </div>
+      <div class="container px-5 py-8 backdrop-blur-lg bg-slate-100/70 shadow-mdrounded-md  ">
+        <div class="flex flex-wrap -m-4 text-center">
+          <div class="p-4 sm:w-1/5 w-1/5">
+            <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">400+</h2>
+            <p class="leading-relaxed">satisfied students</p>
           </div>
-          <div class="container px-5 py-8 backdrop-blur-lg bg-slate-100/70 shadow-mdrounded-md  ">
-            <div class="flex flex-wrap -m-4 text-center">
-              <div class="p-4 sm:w-1/5 w-1/5">
-                <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">400+</h2>
-                <p class="leading-relaxed">satisfied students</p>
-              </div>
-              <div class="p-4 sm:w-1/5 w-1/5">
-                <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">10+</h2>
-                <p class="leading-relaxed">Team members</p>
-              </div>
-              <div class="p-4 sm:w-1/5 w-1/5">
-                <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">200+</h2>
-                <p class="leading-relaxed">graduates</p>
-              </div>
-              <div class="p-4 sm:w-1/5 w-1/5">
-                <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">100+</h2>
-                <p class="leading-relaxed">registered doctor</p>
-              </div>
-              <div class="p-4 sm:w-1/5 w-1/5">
-                <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">10+</h2>
-                <p class="leading-relaxed">Associates patner</p>
-              </div>
-            </div>
+          <div class="p-4 sm:w-1/5 w-1/5">
+            <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">10+</h2>
+            <p class="leading-relaxed">Team members</p>
           </div>
-        </section>
+          <div class="p-4 sm:w-1/5 w-1/5">
+            <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">200+</h2>
+            <p class="leading-relaxed">graduates</p>
+          </div>
+          <div class="p-4 sm:w-1/5 w-1/5">
+            <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">100+</h2>
+            <p class="leading-relaxed">registered doctor</p>
+          </div>
+          <div class="p-4 sm:w-1/5 w-1/5">
+            <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">10+</h2>
+            <p class="leading-relaxed">Associates patner</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Details -->
     <section class="text-gray-600 body-font">
       <div class="container px-5 pb-20  mx-auto">
@@ -291,7 +328,8 @@
               </div>
               <div class="flex-grow">
                 <p class="leading-relaxed text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores
-                  placeat eum praesentium perferendis recusandae. Ipsam ullam atque, officia quidem reiciendis quibusdam
+                  placeat eum praesentium perferendis recusandae. Ipsam ullam atque, officia quidem reiciendis
+                  quibusdam
                   quia voluptatem vitae facilis ut amet, nisi in deserunt!</p>
                 <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -309,12 +347,13 @@
                   class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
                   <h1>4</h1>
                 </div>
-                <h2 class="text-gray-900 text-lg title-font font-medium">Afforabel Tution Fee 
+                <h2 class="text-gray-900 text-lg title-font font-medium">Afforabel Tution Fee
                 </h2>
               </div>
               <div class="flex-grow">
                 <p class="leading-relaxed text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores
-                  placeat eum praesentium perferendis recusandae. Ipsam ullam atque, officia quidem reiciendis quibusdam
+                  placeat eum praesentium perferendis recusandae. Ipsam ullam atque, officia quidem reiciendis
+                  quibusdam
                   quia voluptatem vitae facilis ut amet, nisi in deserunt!</p>
                 <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -337,8 +376,9 @@
               </div>
               <div class="flex-grow">
                 <p class="leading-relaxed text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores
-                  placeat eum praesentium perferendis recusandae. Ipsam ullam atque, officia quidem reiciendis quibusdam
-                  quia voluptatem vitae facilis ut amet, nisi in deserunt!  </p>
+                  placeat eum praesentium perferendis recusandae. Ipsam ullam atque, officia quidem reiciendis
+                  quibusdam
+                  quia voluptatem vitae facilis ut amet, nisi in deserunt! </p>
                 <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     class="w-4 h-4 ml-2" viewBox="0 0 24 24">
@@ -353,14 +393,15 @@
               <div class="flex items-center mb-3">
                 <div
                   class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
-              <h1>6</h1>
+                  <h1>6</h1>
                 </div>
                 <h2 class="text-gray-900 text-lg title-font font-medium">International Exposure
                 </h2>
               </div>
               <div class="flex-grow">
                 <p class="leading-relaxed text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores
-                  placeat eum praesentium perferendis recusandae. Ipsam ullam atque, officia quidem reiciendis quibusdam
+                  placeat eum praesentium perferendis recusandae. Ipsam ullam atque, officia quidem reiciendis
+                  quibusdam
                   quia voluptatem vitae facilis ut amet, nisi in deserunt!</p>
                 <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -379,7 +420,8 @@
     <section class="text-gray-600 body-font">
       <div class="container px-5  pb-24  mx-auto">
         <div class="text-center mb-10">
-          <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-2">Why Mbbs through Medplasia Medicos?</h1>
+          <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-2">Why Mbbs through
+            Medplasia Medicos?</h1>
           <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">some thing related above heading</p>
         </div>
         <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
@@ -420,7 +462,7 @@
                 <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
                 <path d="M22 4L12 14.01l-3-3"></path>
               </svg>
-              <span class="title-font font-medium">Free Admission Councling              </span>
+              <span class="title-font font-medium">Free Admission Councling </span>
             </div>
           </div>
           <div class="p-2 sm:w-1/2 w-full">
@@ -460,7 +502,8 @@
                 <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
                 <path d="M22 4L12 14.01l-3-3"></path>
               </svg>
-              <span class="title-font font-medium">Geniune expert Councling/ Help to select best University Abroad</span>
+              <span class="title-font font-medium">Geniune expert Councling/ Help to select best
+                University Abroad</span>
             </div>
           </div>
         </div>
