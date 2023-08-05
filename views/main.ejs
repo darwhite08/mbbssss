@@ -1,35 +1,37 @@
 <%- include('main-comp/header'); -%>
   <!-- Navigation bar -->
   <%- include('navigations/nav-bar'); -%>
-    <div class="hero-section flex justify flex-col flex-wrap lg:flex-row md:flew-row ">
-      <div class="hero-container-1 lg:basis-1/2 md:basis-1/2 sm:basis-1 flex flex-col">
-        <div class=" self-center bg-white/50 h-full backdrop-blur-lg rounded-lg mx-10 mt-10 mb-5 py-10 px-6">
-          <h1 class="text-slate-600 text-4xl font-bold mb-4 font-serif">MEDPLASIA MEDICOS PVT LTD</h1>
-          <p class=" font-serif text-slate-600 text-lg text-justify">MEDPLASIA provides excellent opportunities for
-            medical students to pursue their MBBS studies abroad. Many young individuals now aspire to study MBBS in
-            foreign countries like Serbia, Russia, Kazakstan , Belarus, Krygzstan, and various countries. Contrary to
-            common beliefs, studying abroad doesn't have to be costly. MEDPLASIA offers budget-friendly options for
-            undergraduate and postgraduate medical programs in English-medium universities across world.
-            At MEDPLASIA, we are delighted to offer students various opportunities for knowledge development, skill
-            enhancement, community engagement, and public service opportunities through student organizations. So,
-            choose MEDPLASIA as your trusted consultant for MBBS admissions abroad and let us help you shape a bright
-            future as a successful medical professional.
-          </p>
-          <ul class="text-slate-600 font-bold text-lg font-serif mt-4 list-disc list-inside ">
-            <li>A premium Consultancy For MBBS Abroad</li>
-            <li>We are providing our best services from 2014</li>
-            <li>300+ satisfied student studying abroad</li>
-            <li>A team of doctors working hard 24*7</li>
-          </ul>
-          <div class="mt-0 items-center mt-5 mr-auto ">
-            <button class="py-2 px-4 bg-slate-800 rounded-lg text-white"> <i class="fa-solid fa-phone "></i> Call us
-            </button>
-            <button class="py-2 px-4 bg-slate-800 rounded-lg text-white"><i class="fa-brands fa-whatsapp text-white"></i> Whatsapp</button>
+    <div class="container hero-section flex  flex-col lg:flex-row md:flew-row ">
+      <div class=" lg:basis-1/2 md:basis-1/2 sm:basis-1 flex flex-col justify-center ">
+        <div class="hero-container-1 ">
+          <div class="bg-white/50  backdrop-blur-lg  rounded-lg px-10 py-5 ">
+            <h1 class="text-slate-600 text-lg md:text-4xl lg:text-4xl font-bold mb-4 font-serif">MEDPLASIA MEDICOS PVT LTD</h1>
+            <p class=" font-serif text-slate-600 text-lg text-justify">MEDPLASIA provides excellent opportunities for
+              medical students to pursue their MBBS studies abroad. Many young individuals now aspire to study MBBS in
+              foreign countries like Serbia, Russia, Kazakstan , Belarus, Krygzstan, and various countries. Contrary to
+              common beliefs, studying abroad doesn't have to be costly. MEDPLASIA offers budget-friendly options for
+              undergraduate and postgraduate medical programs in English-medium universities across world.
+              At MEDPLASIA, we are delighted to offer students various opportunities for knowledge development, skill
+              enhancement, community engagement, and public service opportunities through student organizations. So,
+              choose MEDPLASIA as your trusted consultant for MBBS admissions abroad and let us help you shape a bright
+              future as a successful medical professional.
+            </p>
+            <ul class="text-slate-600 font-bold text-lg font-serif mt-4 list-disc list-inside ">
+              <li>A premium Consultancy For MBBS Abroad</li>
+              <li>We are providing our best services from 2014</li>
+              <li>300+ satisfied student studying abroad</li>
+              <li>A team of doctors working hard 24*7</li>
+            </ul>
+            <div class="mt-0 items-center mt-5 mr-auto ">
+              <button class="py-2 px-4 bg-slate-800 rounded-lg text-white"> <i class="fa-solid fa-phone "></i> Call us
+              </button>
+              <button class="py-2 px-4 bg-slate-800 rounded-lg text-white"><i class="fa-brands fa-whatsapp text-white"></i> Whatsapp</button>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="hero-container-2 lg:basis-1/2 md:basis-1/2 sm:basis-1 flex justify-center mt-10 ">
+      <div class="hero-container-2 basis-1 lg:basis-1/2 md:basis-1/2 sm:basis-1 flex justify-center ">
         <%- include('contact-options/form'); -%>
       </div>
     </div>
@@ -48,7 +50,7 @@
     <section class="text-gray-600 body-font">
       <div class="container px-5 py-24 mx-auto">
         <h1 class="text-3xl font-medium title-font text-gray-900 mb-12 text-center">Testimonials</h1>
-        <div class="grid grid-cols-2 ">
+        <div class="md:grid md:grid-cols-2 lg:grid lg:grid-cols-2 flex flex-wrap ">
 
           <div class="m-2 rounded-lg shadow-md" style="background: url(/public/media-source/illustrations/undraw_woman_ffrd.svg) no-repeat center ; background-size: contain;">
             <div class="h-full bg-gray-100/30 backdrop-blur-2xl p-8 rounded " >
