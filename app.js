@@ -2,10 +2,12 @@ const express = require('express')
 const bodyParser = require('body-parser');
 const ejs = require('ejs');
 const path = require('path')
+const validator =  require('email-validator');
+
+
 
 const app = express()
 const port = process.env.PORT || 3000;
-
 
 app.set('view engine', 'ejs');
 app.use('/public', express.static(__dirname + '/public'));
