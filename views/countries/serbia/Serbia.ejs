@@ -1,11 +1,11 @@
 <%- include('../../main-comp/header'); -%>
     <!-- Navigation bar -->
     <%- include('../../navigations/nav-bar'); -%>
-        <div class="country-container bg-slate-100 pb-10">
+        <div class="country-container bg-slate-100 pb-10 md:mt-20 lg:mt-20 mt-10">
 
-            <div class="h-44 country-name-container ">
+            <div class="h-44 country-name-container mt-10">
                 <div class="bg-slate-800/30 backdrop-blur-lg h-full w-full flex justify-center items-center">
-                    <h1 class="text-white font-serif text-6xl ">STUDY MBBS IN SERBIA</h1>
+                    <h1 class="text-white font-serif md:text-6xl lg:text-6xl text-2xl ">STUDY MBBS IN SERBIA</h1>
                 </div>
             </div>
 
@@ -14,15 +14,15 @@
                 <!-- Table of content -->
                 <div class="flex flex-col justify-center items-center pt-5 pb-10 bg-white/80 mx-10 backdrop-blur-lg mb-5 rounded-lg shadow-md" >
                     <div class="pb-4">
-                        <h1 class="font-bold font-serif text-4xl text-slate-600">Table of content</h1>
+                        <h1 class="font-bold font-serif md:text-4xl lg:text-4xl text-2xl text-slate-600">Table of content</h1>
                     </div> 
                     <div >
-                        <ul class="flex flex-wrap " >
-                            <li class="pt-2 px-8 text-lg font-bold  font-serif border-r-2"><a href="">About</a></li>
-                            <li class="pt-2 px-8 text-lg font-bold  font-serif border-r-2"><a href="">University of Serbia</a></li>
-                            <li class="pt-2 px-8 text-lg font-bold  font-serif border-r-2"><a href="">Cost of living</a></li>
-                            <li class="pt-2 px-8 text-lg font-bold  font-serif border-r-2"><a href="">Colleges in serbia</a></li>
-                            <li class="pt-2 px-8 text-lg font-bold  font-serif "><a href="">More Countries</a></li>
+                        <ul class="flex flex-wrap flex-col text-slate-600 justify-center  " >
+                            <li class="pt-2 px-8 text-lg font-bold  font-serif md:border-r-2 lg:border-r-2  "><a href="">1. About</a></li>
+                            <li class="pt-2 px-8 text-lg font-bold  font-serif md:border-r-2 lg:border-r-2 "><a href="">2. University of Serbia</a></li>
+                            <li class="pt-2 px-8 text-lg font-bold  font-serif md:border-r-2 lg:border-r-2 "><a href="">3. Cost of living</a></li>
+                            <li class="pt-2 px-8 text-lg font-bold  font-serif md:border-r-2 lg:border-r-2 "><a href="">4. Colleges in serbia</a></li>
+                            <li class="pt-2 px-8 text-lg font-bold  font-serif "><a href="">5. More Countries</a></li>
                         </ul>
                     </div>
                 </div>
@@ -100,16 +100,16 @@
                 <!-- country Colleges -->
 
                 <!-- College card container -->
-                <div class=" bg-white mx-10 my-20 py-10 rounded-lg shadow-md">
+                <div class=" bg-white mx-10 my-20 md:py-10 lg:py-10 rounded-lg shadow-md">
                     <div class="college-card-container">
-                        <div class="bg-slate-300/30 backdrop-blur-lg rounded-md mx-10 py-10 ">
+                        <div class="bg-slate-300/30 bg-slate-300/30 backdrop-blur-lg backdrop-blur-lg rounded-md md:mx-10 md:py-10 ">
                             <div class="flex justify-center self-center">
-                                <h1 class="text-6xl font-bold font-serif text-slate-600 mb-10">Colleges in Serbia</h1>
+                                <h1 class="md:text-6xl lg:text-6xl text-2xl font-bold font-serif text-slate-600 mb-10">Colleges in Serbia</h1>
                             </div>
-                            <div class="px-40 mb-10">
-                                <div class="college-card flex flex-rows  shadow-md rounded-md overflow-hidden bg-white">
+                            <div class="md:px-40 lg:px-40 px-0 mb-10">
+                                <div class="college-card flex flex-col md:flex-row lg:flex-row  shadow-md rounded-md overflow-hidden bg-white">
                                     <div class="college-img-container ">
-                                        <img class=" w-60 h-80"
+                                        <img class=" md:w-60 lg:w-60 w-full h-80"
                                             src="/public/media-source/countries/serbia/UONFOM/UONFOM-building.jpg" alt="">
                                     </div>
                                     <div class="px-4 college-card-content-container py-4">
@@ -126,7 +126,7 @@
                                             </ul>
                                         </div>
                                         <div class="college-card-content-about-container">
-                                            <div class="grid grid-cols-2 college-card-content-about">
+                                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 college-card-content-about">
                                                 <table class="w-full">
                                                     <tr>
                                                         <th>Univer type</th>
@@ -149,7 +149,7 @@
                                                         <td>:6000 Euros</td>
                                                     </tr>
                                                 </table>
-                                                <table>
+                                                <table class="w-full">
                                                     <tr>
                                                         <th>Available Intake</th>
                                                         <td>:Sep 2023</td>
@@ -178,10 +178,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="px-40 mb-10">
-                                <div class="college-card flex flex-rows shadow-md rounded-md overflow-hidden bg-white">
-                                    <div class="college-img-container w-60 h-80">
-                                        <img class="h-full w-full"
+                            <div class="md:px-40 lg:px-40 px-0 mb-10">
+                                <div class="college-card flex flex-col md:flex-row lg:flex-row shadow-md rounded-md overflow-hidden bg-white">
+                                    <div class="college-img-container ">
+                                        <img class=" md:w-60 lg:w-60 w-full h-80"
                                             src="/public/media-source/countries/serbia/UOK/UOK-building.jpg" alt="">
                                     </div>
                                     <div class="px-4 college-card-content-container py-4">
@@ -198,7 +198,7 @@
                                             </ul>
                                         </div>
                                         <div class="college-card-content-about-container">
-                                            <div class="grid grid-cols-2 college-card-content-about">
+                                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 college-card-content-about">
                                                 <table class="w-full">
                                                     <tr>
                                                         <th>Univer type</th>
@@ -250,10 +250,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="px-40 mb-10">
-                                <div class="college-card flex flex-rows shadow-md rounded-md overflow-hidden bg-white">
-                                    <div class="college-img-container w-60 h-80">
-                                        <img class="h-full w-full"
+                            <div class="md:px-40 lg:px-40 px-0 mb-10">
+                                <div class="college-card flex flex-col md:flex-row lg:flex-row shadow-md rounded-md overflow-hidden bg-white">
+                                    <div class="college-img-container ">
+                                        <img class=" md:w-60 lg:w-60 w-full h-80"
                                             src="/public/media-source/countries/serbia/UONSFOM/UONSFOM-building.jpeg" alt="">
                                     </div>
                                     <div class="px-4 college-card-content-container py-4">
@@ -269,7 +269,7 @@
                                             </ul>
                                         </div>
                                         <div class="college-card-content-about-container">
-                                            <div class="grid grid-cols-2 college-card-content-about">
+                                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 college-card-content-about">
                                                 <table class="w-full">
                                                     <tr>
                                                         <th>Univer type</th>
@@ -324,7 +324,8 @@
                         </div>
                     </div>
                 </div>
-               <div class="bg-white mx-10 rounded-lg shadow-md">
+                <!-- countries card -->
+               <div class="md:bg-white lg:bg-white mx-10 md:rounded-lg lg:rounded-lg md:shadow-md lg:shadow-md">
                 <%- include('../../countries/countries-card'); -%>
                </div>
             </div>
