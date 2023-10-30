@@ -5,6 +5,9 @@
 @import url("/public/styles/country/college.css");
 @import url("/public/styles/description/about-us.css");
 @import url("/public/styles/navigations/countries.css");
+@import url("/public/styles/contact-options/contact.css");
+@import url("/public/styles/testimonials/testimonials.css");
+
 body{
     padding: 0;
     margin: 0;

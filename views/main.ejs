@@ -1,87 +1,16 @@
 <%- include('main-comp/header'); -%>
   <!-- Navigation bar -->
   <%- include('navigations/nav-bar'); -%>
-    <div class="container mt-10 md:my-10 lg:my-14 mx-auto hero-section flex flex-col lg:flex-row md:flew-row bg-slate-50 ">
-      <div class=" lg:basis-1/2 md:basis-1/2 sm:basis-1 flex flex-col justify-center ">
-        <div class="hero-container-1 m-10">
-          <div class="bg-slate-300/30  backdrop-blur-lg rounded-lg px-4 py-6 md:p-10 lg:p-10">
-            <h1 class="text-slate-600 text-lg md:text-4xl lg:text-4xl font-bold mb-4 font-serif">MEDPLASIA MEDICOS PVT
-              LTD</h1>
-            <p class=" font-serif text-slate-600 text-lg text-justify">MEDPLASIA provides excellent opportunities for
-              medical students to pursue their MBBS studies abroad. Many young individuals now aspire to study MBBS in
-              foreign countries like Serbia, Russia, Kazakstan , Belarus, Krygzstan, and various countries. Contrary to
-              common beliefs, studying abroad doesn't have to be costly. MEDPLASIA offers budget-friendly options for
-              undergraduate and postgraduate medical programs in English-medium universities across world.
-              At MEDPLASIA, we are delighted to offer students various opportunities for knowledge development, skill
-              enhancement, community engagement, and public service opportunities through student organizations. So,
-              choose MEDPLASIA as your trusted consultant for MBBS admissions abroad and let us help you shape a bright
-              future as a successful medical professional.
-            </p>
-            <ul class="text-slate-600 font-bold text-lg font-serif mt-4 list-disc list-inside ">
-              <li>A premium Consultancy For MBBS Abroad</li>
-              <li>We are providing our best services from 2014</li>
-              <li>300+ satisfied student studying abroad</li>
-              <li>A team of doctors working hard 24*7</li>
-            </ul>
-            <div class=" items-center mx-auto mt-4">
-              <a href="tel:+917878850251" class="py-2   mr-2 px-4 bg-slate-800 rounded-lg text-white"> <i class="fa-solid fa-phone "></i> Call us
-              </a>
-              <a href="https://wa.me/+919413271266?" class="py-2 px-4 bg-slate-800 rounded-lg text-white"><i
-                  class="fa-brands fa-whatsapp text-white"></i> Whatsapp</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Form container -->
-      <div class=" lg:basis-1/2 md:basis-1/2 sm:basis-1 flex flex-col justify-center ">
-          <div class="hero-container-2 mx-10">
-          <div  class="form-container backdrop-blur-lg h-full shadow-xl rounded-lg flex justify-center md:py-6 lg:py-6  bg-slate-300/30 ">
-            <div class=" bg-white flex flex-col py-4 md:py-8 md:mt-8 lg:mt-8 md:mt-0 px-8 rounded-md">
-              <h2 class="text-gray-900 text-4xl mb-1 font-medium title-font">Please Fill Form</h2>
-              <div class="relative mb-2">
-                  <label for="fname" class="leading-7 text-sm text-gray-600">Your Name</label>
-                  <input type="text" id="name" name="name"
-                      class="w-full h-8 bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 px-3 leading-8 transition-colors duration-200 ease-in-out">
-              </div>
-              <div class="relative mb-2">
-                  <label for="lname" class="leading-7 text-sm text-gray-600">Your Email Adress</label>
-                  <input type="text" id="name" name="name"
-                      class="w-full h-8 bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700  px-3 leading-8 transition-colors duration-200 ease-in-out">
-              </div>
-              <div class="relative mb-2">
-                  <label for="name" class="leading-7 text-sm text-gray-600">City</label>
-                  <input type="text" id="name" name="name"
-                      class="w-full h-8 bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700  px-3 leading-8 transition-colors duration-200 ease-in-out">
-              </div>
-              <div class="relative mb-2">
-                  <label for="email" class="leading-7 text-sm text-gray-600">Phone Number</label>
-                  <input type="email" id="email" name="email"
-                        class="w-full h-8 bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700  px-3 leading-8 transition-colors duration-200 ease-in-out">
-              </div>
-              <div class="relative mb-4">
-                  <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
-                  <textarea id="message" name="message"
-                      class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-24 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
-              </div>
-              <button
-                  class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>
-              <p class="text-xs text-gray-500 mt-3"></p>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-    <!-- About us -->
-    <div>
-      <%- include('description/about-us'); -%>
-    </div>
+  
     <!-- Countries Navigation -->
-    <div id="/countires">
+    <div id="/countires" class="mt-20">
       <%- include('navigations/countries'); -%>
     </div>
 
     <!-- Testimoney -->
-    <section class="text-gray-600 body-font mt-10">
+    
+    <%- include('testimonials/testimonials'); -%>
+    <!-- <section class="text-gray-600 body-font mt-10">
       <div class="container px-10 md:py-24 lg:py-24 sm:py-24 mx-auto">
         <h1 class="text-3xl font-medium title-font text-gray-900 mb-12 text-center">Testimonials</h1>
         <div class="md:grid md:grid-cols-2 lg:grid lg:grid-cols-2 flex flex-wrap ">
@@ -243,7 +172,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Statics -->
     <section class="text-gray-600 body-font mx-10 mb-10 ">

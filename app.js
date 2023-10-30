@@ -15,7 +15,9 @@ app.use('/public', express.static(__dirname + '/public'));
 app.get('/', function(req, res) {
     res.render('main');
 });
-
+app.get('/', function(req, res) {
+    res.render('blog-main');
+});
 app.get('/serbia', function(req, res) {
     res.render('countries/serbia/Serbia');
 });
@@ -23,7 +25,7 @@ app.get('/serbia/UONFOM', function(req, res) {
     res.render('countries/serbia/colleges/uonfom');
 });
 app.all('*', (req, res) => {
-    res.render('error');
+    res.render('');
 })
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
