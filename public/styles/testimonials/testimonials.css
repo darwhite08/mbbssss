@@ -27,7 +27,6 @@
 }
 
 .swiper-slide .ImgHolder {
-  background-color: #4361ee;
   display: flex;
   width: 100%;
   height: auto;
@@ -37,7 +36,7 @@
 }
 
 .ContentHolder::before {
-  background-color: #4361ee;
+  background-color: #8beabe;
   content: '';
   width: 50px;
   height: 50px;
@@ -50,18 +49,18 @@
 .ContentHolder {
   position: relative;
   padding: 10px;
-  background-color: white;
+  background-color: rgb(253, 253, 253);
   border-top-right-radius: 20px;
 }
 
 .swiper-pagination-bullet {
   background-color: white;
   opacity: 1;
-  border: 1px solid #4361ee;
+  border: 1px solid #44ee35;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #4361ee;
+  background-color: #30cb78;
 }
 
 .swiper-button {
@@ -74,7 +73,7 @@
   border-radius: 50%;
   margin: auto;
   object-fit: cover;
-  border: 3px solid #4361ee;
+  border: 3px solid #fefffe;
   outline: 2px solid white;
 }
 

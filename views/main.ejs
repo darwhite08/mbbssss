@@ -1,310 +1,147 @@
 <%- include('main-comp/header'); -%>
-  <!-- Navigation bar -->
-  <%- include('navigations/nav-bar'); -%>
   
+<!-- Navigation bar -->
+  <%- include('navigations/nav-bar'); -%>
+
+    <!-- Hero Section-->
+    <%- include('main-comp/hero-section'); -%>
+
     <!-- Countries Navigation -->
     <div id="/countires" class="mt-20">
       <%- include('navigations/countries'); -%>
     </div>
+      <!-- Testimoney -->
+      <div class="min-h-full bg-blue-100">
+        <%- include('testimonials/testimonials'); -%>
+      </div>
 
-    <!-- Testimoney -->
-    
-    <%- include('testimonials/testimonials'); -%>
-    <!-- <section class="text-gray-600 body-font mt-10">
-      <div class="container px-10 md:py-24 lg:py-24 sm:py-24 mx-auto">
-        <h1 class="text-3xl font-medium title-font text-gray-900 mb-12 text-center">Testimonials</h1>
-        <div class="md:grid md:grid-cols-2 lg:grid lg:grid-cols-2 flex flex-wrap ">
-
-          <div class="m-2 rounded-lg shadow-md"
-            style="background: url(/public/media-source/illustrations/undraw_woman_ffrd.svg) no-repeat center ; background-size: contain;">
-            <div class="h-full bg-gray-100/30 backdrop-blur-2xl p-8 rounded ">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4"
-                viewBox="0 0 975.036 975.036">
-                <path
-                  d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
-                </path>
-              </svg>
-              <p class="leading-relaxed mb-6">I thank medplasia medicos to channelise my energy in the right direction
-                by providing me the path which let my childhood dream of getting a MBBS degree possible. <br>
-                Moreover, I got a lot of exposure in the foreign land which not only improves my confidence but my
-                communication skills as well. Without Mediplasia MEDICOS , It would be impposible to Establish
-                Ourselves
-                <br> I personally want to thank this consultancy who always electrify the spark in me to study and
-                crack
-                the license exams of our repective country. I feel so blessed to be a part of it.
-              </p>
-              <a class="inline-flex items-center">
-                <img alt="testimonial" src="/public/media-source/avtar-illustration/female.svg"
-                  class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
-                <span class="flex-grow flex flex-col pl-4">
-                  <span class="title-font font-medium text-gray-900">Yashica Koge, 3rd Year</span>
-                  <span class="text-gray-500 text-sm">UZHNU MH</span>
-                </span>
-              </a>
+      <section class="text-gray-600 body-font m-10 mb-10 ">
+        <div class="flex justify-center">
+          <h1 class="font-bold font-serif text-lg md:text-4xl lg:text-4xl py-10">More About our team and clients</h1>
+        </div>
+        <div class="container px-5 py-8 backdrop-blur-lg bg-slate-100/70 shadow-mdrounded-md  ">
+          <div class="flex sm: md:flex-row lg:flex-row flex-col  text-center">
+            <div class="p-4 w-full sm:w-1/5 md:w-1/5 lg:w-1/5">
+              <h2 class="title-font font-medium sm:text-4xl text-2xl text-gray-900">400+</h2>
+              <p class="leading-relaxed">satisfied students</p>
             </div>
-          </div>
-
-          <div class="m-2 rounded-lg shadow-md"
-            style="background: url(/public/media-source/illustrations/undraw_woman_ffrd.svg) no-repeat center ; background-size: contain;">
-            <div class="h-full bg-gray-100/30 backdrop-blur-2xl p-8 rounded ">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4"
-                viewBox="0 0 975.036 975.036">
-                <path
-                  d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
-                </path>
-              </svg>
-              <p class="leading-relaxed mb-6">Like many others I too have a dream of becoming a doctor but in order to
-                make dreams come into realty, It takes a lot of determination, dedication, self-discipline which is
-                ignited by Mediplasia MEDICOS. <br> This consultancy not only helped me in establishing myself in
-                Ukraine but also guided me to excel in my studies as well I feel so blessed to be a part of it. <br>
-                I experienced Mediplasia a helpful and good for any student for mbbs</p>
-              <a class="inline-flex items-center">
-                <img alt="testimonial" src="/public/media-source/avtar-illustration/male.svg"
-                  class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
-                <span class="flex-grow flex flex-col pl-4">
-                  <span class="title-font font-medium text-gray-900">Himanshu Kumawat, 3rd year</span>
-                  <span class="text-gray-500 text-sm">TNMU Sikar </span>
-                </span>
-              </a>
+            <div class="p-4 w-full sm:w-1/5 md:w-1/5 lg:w-1/5">
+              <h2 class="title-font font-medium sm:text-4xl text-2xl text-gray-900">10+</h2>
+              <p class="leading-relaxed">Team members</p>
             </div>
-          </div>
-
-          <div class="m-2 rounded-lg shadow-md"
-            style="background: url(/public/media-source/illustrations/undraw_woman_ffrd.svg) no-repeat center ; background-size: contain;">
-            <div class="h-full bg-gray-100/30 backdrop-blur-2xl p-8 rounded ">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4"
-                viewBox="0 0 975.036 975.036">
-                <path
-                  d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
-                </path>
-              </svg>
-              <p class="leading-relaxed mb-6">Hello I am cheshta Shukla, I am now in 2nd year and I am pursuing my
-                mbbs
-                from one ot the most well known and bestest university of Ukraine, Uzzhorod National university. <br>
-                I
-                came here with the reference of Mediplasia medicos which is most worth believing and admirable company
-                for admission abroad. <br> If you want to secure your carrer in mbbs I will suggest you very well that
-                you go to Mediplasia Medicos.</p>
-              <a class="inline-flex items-center">
-                <img alt="testimonial" src="/public/media-source/avtar-illustration/female.svg"
-                  class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
-                <span class="flex-grow flex flex-col pl-4">
-                  <span class="title-font font-medium text-gray-900">cheshta Shukla, 2nd year</span>
-                  <span class="text-gray-500 text-sm">Ukraine</span>
-                </span>
-              </a>
+            <div class="p-4 w-full sm:w-1/5 md:w-1/5 lg:w-1/5">
+              <h2 class="title-font font-medium sm:text-4xl text-2xl text-gray-900">200+</h2>
+              <p class="leading-relaxed">graduates</p>
             </div>
-          </div>
-
-          <div class="m-2 rounded-lg shadow-md"
-            style="background: url(/public/media-source/illustrations/undraw_woman_ffrd.svg) no-repeat center ; background-size: contain;">
-            <div class="h-full bg-gray-100/30 backdrop-blur-2xl p-8 rounded ">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4"
-                viewBox="0 0 975.036 975.036">
-                <path
-                  d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
-                </path>
-              </svg>
-              <p class="leading-relaxed mb-6">I am Tanish Mehta a student of 2nd year course at Ternopil National
-                Medical university. I chose Mediplasia Medicos because they provide the best facility. They are very
-                helpful and cooperative. Thankyou Medplasia Medicos and Dr. Vijay sir.</p>
-              <a class="inline-flex items-center">
-                <img alt="testimonial" src="/public/media-source/avtar-illustration/male.svg"
-                  class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
-                <span class="flex-grow flex flex-col pl-4">
-                  <span class="title-font font-medium text-gray-900">Tanish Mehta, 2nd year</span>
-                  <span class="text-gray-500 text-sm">Ukraine</span>
-                </span>
-              </a>
+            <div class="p-4 w-full sm:w-1/5 md:w-1/5 lg:w-1/5">
+              <h2 class="title-font font-medium sm:text-4xl text-2xl text-gray-900">100+</h2>
+              <p class="leading-relaxed">registered doctor</p>
             </div>
-          </div>
-
-          <div class="m-2 rounded-lg shadow-md"
-            style="background: url(/public/media-source/illustrations/undraw_woman_ffrd.svg) no-repeat center ; background-size: contain;">
-            <div class="h-full bg-gray-100/30 backdrop-blur-2xl p-8 rounded ">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4"
-                viewBox="0 0 975.036 975.036">
-                <path
-                  d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
-                </path>
-              </svg>
-              <p class="leading-relaxed mb-6">This is Nirdesh Dosi, a student of Ternopil National Medical university,
-                Ukraine. The dream of studying abroad would not have been possible if Mediplasia medicos was not there
-                to help me. <br>
-                Under the Guidence of Dr. Vijay sir I gathered strength to dream and pursue my goals of becoming a
-                good doctor. Mediplasia Medico helps the students in each and every aspect of their lives. <br>
-                It lays down the foundation for it students to crack registration exams like MCI,PLAB,USMLE I feel so
-                lucy to be a part of this great team and would like to suggest Mediplasia Medicos for all the students
-                who want to commence there study abroad.</p>
-              <a class="inline-flex items-center">
-                <img alt="testimonial" src="/public/media-source/avtar-illustration/male.svg"
-                  class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
-                <span class="flex-grow flex flex-col pl-4">
-                  <span class="title-font font-medium text-gray-900">Nirdesh Dosi, 2nd year</span>
-                  <span class="text-gray-500 text-sm">Ukraine</span>
-                </span>
-              </a>
-            </div>
-          </div>
-
-          <div class="m-2 rounded-lg shadow-md"
-            style="background: url(/public/media-source/illustrations/undraw_woman_ffrd.svg) no-repeat center ; background-size: contain;">
-            <div class="h-full bg-gray-100/30 backdrop-blur-2xl p-8 rounded ">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4"
-                viewBox="0 0 975.036 975.036">
-                <path
-                  d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
-                </path>
-              </svg>
-              <p class="leading-relaxed mb-6">With the help of Mediplasia I went confidently in the direction of my
-                goals. The consultancy let me belive in my dreams. I want to to appericaite MEDPLASIA MEDICOS for
-                showing me the right path. I would like to suggest everyone to consult Mediplasia Medicos who think
-                about further education in Ukraine and excel in MBBS as a career. </p>
-              <a class="inline-flex items-center">
-                <img alt="testimonial" src="/public/media-source/avtar-illustration/male.svg"
-                  class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
-                <span class="flex-grow flex flex-col pl-4">
-                  <span class="title-font font-medium text-gray-900">Poorve Garg, 2nd Year</span>
-                  <span class="text-gray-500 text-sm">Ukraine</span>
-                </span>
-              </a>
+            <div class="p-4 w-full sm:w-1/5 md:w-1/5 lg:w-1/5">
+              <h2 class="title-font font-medium sm:text-4xl text-2xl text-gray-900">10+</h2>
+              <p class="leading-relaxed">Associates patner</p>
             </div>
           </div>
         </div>
-      </div>
-    </section> -->
+      </section>
+      <!-- why Mbbs Abroad Details -->
+      <%- include('description/why-abroad'); -%>
 
-    <!-- Statics -->
-    <section class="text-gray-600 body-font mx-10 mb-10 ">
-      <div class="flex justify-center">
-        <h1 class="font-bold font-serif text-lg md:text-4xl lg:text-4xl py-10">More About our team and clients</h1>
-      </div>
-      <div class="container px-5 py-8 backdrop-blur-lg bg-slate-100/70 shadow-mdrounded-md  ">
-        <div class="flex sm: md:flex-row lg:flex-row flex-col  text-center">
-          <div class="p-4 w-full sm:w-1/5 md:w-1/5 lg:w-1/5">
-            <h2 class="title-font font-medium sm:text-4xl text-2xl text-gray-900">400+</h2>
-            <p class="leading-relaxed">satisfied students</p>
-          </div>
-          <div class="p-4 w-full sm:w-1/5 md:w-1/5 lg:w-1/5">
-            <h2 class="title-font font-medium sm:text-4xl text-2xl text-gray-900">10+</h2>
-            <p class="leading-relaxed">Team members</p>
-          </div>
-          <div class="p-4 w-full sm:w-1/5 md:w-1/5 lg:w-1/5">
-            <h2 class="title-font font-medium sm:text-4xl text-2xl text-gray-900">200+</h2>
-            <p class="leading-relaxed">graduates</p>
-          </div>
-          <div class="p-4 w-full sm:w-1/5 md:w-1/5 lg:w-1/5">
-            <h2 class="title-font font-medium sm:text-4xl text-2xl text-gray-900">100+</h2>
-            <p class="leading-relaxed">registered doctor</p>
-          </div>
-          <div class="p-4 w-full sm:w-1/5 md:w-1/5 lg:w-1/5">
-            <h2 class="title-font font-medium sm:text-4xl text-2xl text-gray-900">10+</h2>
-            <p class="leading-relaxed">Associates patner</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- why Mbbs Abroad Details -->
-    <%- include('description/why-abroad'); -%>
-    
-    <!-- Details section -->
-    <section class="text-gray-600 body-font">
-      <div class="container px-5  pb-24  mx-auto">
-        <div class="text-center mb-10">
-          <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-2">Why Mbbs through
-            Medplasia Medicos?</h1>
-          <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">some thing related above heading</p>
-        </div>
-        <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
-          <div class="p-2 sm:w-1/2 w-full">
-            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
-                class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
-                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                <path d="M22 4L12 14.01l-3-3"></path>
-              </svg>
-              <span class="title-font font-medium">A team of well experienced Doctor's</span>
+        <!-- Details section -->
+        <section class="text-gray-600 body-font">
+          <div class="container px-5  pb-24  mx-auto">
+            <div class="text-center mb-10">
+              <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-2">Why Mbbs through
+                Medplasia Medicos?</h1>
+              <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">some thing related above heading</p>
             </div>
-          </div>
-          <div class="p-2 sm:w-1/2 w-full">
-            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
-                class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
-                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                <path d="M22 4L12 14.01l-3-3"></path>
-              </svg>
-              <span class="title-font font-medium">400+ satisfied student studying abroad</span>
+            <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+              <div class="p-2 sm:w-1/2 w-full">
+                <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                    class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                    <path d="M22 4L12 14.01l-3-3"></path>
+                  </svg>
+                  <span class="title-font font-medium">A team of well experienced Doctor's</span>
+                </div>
+              </div>
+              <div class="p-2 sm:w-1/2 w-full">
+                <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                    class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                    <path d="M22 4L12 14.01l-3-3"></path>
+                  </svg>
+                  <span class="title-font font-medium">400+ satisfied student studying abroad</span>
+                </div>
+              </div>
+              <div class="p-2 sm:w-1/2 w-full">
+                <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                    class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                    <path d="M22 4L12 14.01l-3-3"></path>
+                  </svg>
+                  <span class="title-font font-medium"> Help to clear exam like NEXT/FMGE / USMLE / PLAB</span>
+                </div>
+              </div>
+              <div class="p-2 sm:w-1/2 w-full">
+                <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                    class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                    <path d="M22 4L12 14.01l-3-3"></path>
+                  </svg>
+                  <span class="title-font font-medium">Free Admission Councling </span>
+                </div>
+              </div>
+              <div class="p-2 sm:w-1/2 w-full">
+                <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                    class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                    <path d="M22 4L12 14.01l-3-3"></path>
+                  </svg>
+                  <span class="title-font font-medium"> Lowest consultancy charges</span>
+                </div>
+              </div>
+              <div class="p-2 sm:w-1/2 w-full">
+                <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                    class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                    <path d="M22 4L12 14.01l-3-3"></path>
+                  </svg>
+                  <span class="title-font font-medium">Leading consultancy with 10 year or excellence</span>
+                </div>
+              </div>
+              <div class="p-2 sm:w-1/2 w-full">
+                <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                    class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                    <path d="M22 4L12 14.01l-3-3"></path>
+                  </svg>
+                  <span class="title-font font-medium">Post graduation Assistantance</span>
+                </div>
+              </div>
+              <div class="p-2 sm:w-1/2 w-full">
+                <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                    class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                    <path d="M22 4L12 14.01l-3-3"></path>
+                  </svg>
+                  <span class="title-font font-medium">Geniune expert Councling/ Help to select best
+                    University Abroad</span>
+                </div>
+              </div>
             </div>
+            <button
+              class="flex mx-auto mt-4 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
           </div>
-          <div class="p-2 sm:w-1/2 w-full">
-            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
-                class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
-                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                <path d="M22 4L12 14.01l-3-3"></path>
-              </svg>
-              <span class="title-font font-medium"> Help to clear exam like NEXT/FMGE / USMLE / PLAB</span>
-            </div>
-          </div>
-          <div class="p-2 sm:w-1/2 w-full">
-            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
-                class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
-                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                <path d="M22 4L12 14.01l-3-3"></path>
-              </svg>
-              <span class="title-font font-medium">Free Admission Councling </span>
-            </div>
-          </div>
-          <div class="p-2 sm:w-1/2 w-full">
-            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
-                class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
-                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                <path d="M22 4L12 14.01l-3-3"></path>
-              </svg>
-              <span class="title-font font-medium"> Lowest consultancy charges</span>
-            </div>
-          </div>
-          <div class="p-2 sm:w-1/2 w-full">
-            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
-                class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
-                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                <path d="M22 4L12 14.01l-3-3"></path>
-              </svg>
-              <span class="title-font font-medium">Leading consultancy with 10 year or excellence</span>
-            </div>
-          </div>
-          <div class="p-2 sm:w-1/2 w-full">
-            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
-                class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
-                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                <path d="M22 4L12 14.01l-3-3"></path>
-              </svg>
-              <span class="title-font font-medium">Post graduation Assistantance</span>
-            </div>
-          </div>
-          <div class="p-2 sm:w-1/2 w-full">
-            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
-                class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
-                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                <path d="M22 4L12 14.01l-3-3"></path>
-              </svg>
-              <span class="title-font font-medium">Geniune expert Councling/ Help to select best
-                University Abroad</span>
-            </div>
-          </div>
-        </div>
-        <button
-          class="flex mx-auto mt-4 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
-      </div>
-    </section>
-    <!-- News letter -->
-    <%- include('contact-options/newsletter'); -%>
-    <!-- contact -->
-      <%- include('contact-options/contact'); -%>
-
+        </section>
+        <!-- News letter -->
+        <%- include('contact-options/newsletter'); -%>
           <%- include('main-comp/footer'); -%>

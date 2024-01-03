@@ -33,7 +33,7 @@
             }]
         var slideHolder = document.querySelector("#slideHolder")
         for (let i of testiomnialData) {
-           slideHolder.innerHTML += `<div class="swiper-slide shadow-lg rounded-lg"> <div class="ImgHolder"><img src="${i.avatar}"></div><div class="ContentHolder"><h3>${i.name}</h3><p>${i.review}</p></div></div>`;
+           slideHolder.innerHTML += `<div class="swiper-slide shadow-lg rounded-lg bg-green-300"> <div class="ImgHolder"><img src="${i.avatar}"></div><div class="ContentHolder"><h3>${i.name}</h3><p>${i.review}</p></div></div>`;
         }
         
         const swiper = new Swiper('#craouselContainer', {
