@@ -3,247 +3,70 @@
     <%- include('../../navigations/nav-bar'); -%>
         <div class="country-container bg-slate-100 pb-10 md:mt-20 lg:mt-20 mt-10">
 
-            <div class="h-44 country-name-container mt-10">
-                <div class="bg-slate-800/30 backdrop-blur-lg h-full w-full flex justify-center items-center">
-                    <h1 class="text-white font-serif md:text-6xl lg:text-6xl text-2xl ">STUDY MBBS IN SERBIA</h1>
+            <div class="h-44 country-name-container mst-10 ">
+                <div class="bg-slate-800/30 backdrop-blur-lg h-full w-full flex flex-row justify-center items-center">
+                    <img class="h-24 w-24 bg-white p-2 rounded-full mr-8"
+                        src="../../../public/media-source/flags-png/serbia.png" alt="">
+                    <div>
+                        <h1 class="text-white font-serif md:text-6xl lg:text-6xl text-2xl ">STUDY MBBS IN SERBIA</h1>
+                        <p class="text-white font-serif">Home / Serbia</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row">
+                <div class="basis-10/12 ">
+                    <!-- Countries card  -->
+                    <div>
+                        <div class="bg-green-400 w-full py-5 ">
+                            <h1 class="text-white text-3xl font-bold ml-20">Colleges in Serbia</h1>
+                        </div>
+                        <div class="grid grid-cols-3 gap-4 ml-20 mt-10">
+                            <% for(let i=0; i<total; i++) { %>
+                                <div class="flex flex-col  shadow-lg bg-white rounded-lg">
+                                    <div
+                                        class="bg-[url('../../../public/media-source/countries/serbia/UOK/UOK-building.jpg')] h-52 bg-cover bg-no-repeat rounded-lg static">
+                                        <button
+                                            class="bg-green-600 text-sm rounded-lg py-2 px-4 text-white relative top-5 left-5">public</button>
+                                    </div>
+                                    <div class="px-2 py-4">
+                                        <h1 class="font-bold text-xl text-gray-800"><%=college_name%></h1>
+                                        <div class="flex flex-row gap-2 pt-4">
+                                            <p class="border-r-2 border-gray-300 px-2"><span>Course:</span> course name
+                                            </p>
+                                            <p><span>Degree:</span> Degree Name</p>
+                                        </div>
+                                        <hr class="h-0.5 my-4 bg-gray-300 border-0 mt-2 ">
+                                        <div class="flex flex-row gap-4">
+                                            <div>
+                                                <p>University Type: <span>text</span></p>
+                                                <p>Grade: <span>text</span></p>
+                                                <p>intake: <span>text</span></p>
+                                            </div>
+                                            <div>
+                                                <p>Specialization:</p>
+                                                <p>World Rank</p>
+                                                <p>Medium</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="flex flex-wrap gap-4 mt-4  ">
+                                            <buton class="bg-green-600 text-white py-2 px-4 rounded-md">Learn More
+                                            </buton>
+                                            <buton class="bg-yellow-600 text-white py-2 px-4 rounded-md">Apply Now
+                                            </buton>
+                                            <buton></buton>
+                                        </div>
+                                    </div>
+                                </div>
+                                <% } %>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="basis-2/12 bg-green-500 h-full w-full">
+
                 </div>
             </div>
 
-
-            <div class=" pt-10 ">
-                <!-- College card container -->
-                <div class=" bg-white mx-10 my-20 md:py-10 lg:py-10 rounded-lg shadow-md">
-                    <div class="my-10 text-6xl">
-                        <h1>Colleges in Serbia</h1>
-                    </div>
-                    <div class="md:px-40 lg:px-40 px-0 mb-10">
-                        <div
-                            class="college-card flex flex-col md:flex-row lg:flex-row  shadow-md rounded-md overflow-hidden bg-white">
-                            <div class="college-img-container ">
-                                <img class=" md:w-60 lg:w-60 w-full h-80"
-                                    src="/public/media-source/countries/serbia/UONFOM/UONFOM-building.jpg" alt="">
-                            </div>
-                            <div class="px-4 college-card-content-container py-4">
-                                <div class="college-card-content-header border-b-2 border-slate-400">
-                                    <h1 class="font-bold font-serif text-2xl text-slate-800 ">University of Nis
-                                        Faculty
-                                        of Medicine</h1>
-                                    <ul class="flex flex-row gap-4 pb-2">
-                                        <li class="border-r-2 pr-2 border-slate-400">Country: <span>Serbia</span>
-                                        </li>
-                                        <li class="border-r-2 pr-2 border-slate-400">Degree: <span>Md</span>
-                                        </li>
-                                        <li class="">Course: <span>Medicine</span> </li>
-                                    </ul>
-                                </div>
-                                <div class="college-card-content-about-container">
-                                    <div
-                                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 college-card-content-about">
-                                        <table class="w-full">
-                                            <tr>
-                                                <th>Univer type</th>
-                                                <td>:Public</td>
-                                            </tr>
-                                            <tr>
-                                                <th>University Grade</th>
-                                                <td>:A</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Estd. Year</th>
-                                                <td>:1965</td>
-                                            </tr>
-                                            <tr>
-                                                <th>ECFMG Status</th>
-                                                <td>:Approved</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Course Fee</th>
-                                                <td>:6000 Euros</td>
-                                            </tr>
-                                        </table>
-                                        <table class="w-full">
-                                            <tr>
-                                                <th>Available Intake</th>
-                                                <td>:Sep 2023</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Medium of Course</th>
-                                                <td>:English</td>
-                                            </tr>
-                                            <tr>
-                                                <th>World Rank</th>
-                                                <td>:1470</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Course Duration</th>
-                                                <td>:6 Year of MD, Incl. of internship</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Specialization</th>
-                                                <td>:MD</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                    <button class="bg-lime-600 py-2 px-4 rounded-lg text-white ">Learn More About
-                                        university</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="md:px-40 lg:px-40 px-0 mb-10">
-                        <div
-                            class="college-card flex flex-col md:flex-row lg:flex-row shadow-md rounded-md overflow-hidden bg-white">
-                            <div class="college-img-container ">
-                                <img class=" md:w-60 lg:w-60 w-full h-80"
-                                    src="/public/media-source/countries/serbia/UOK/UOK-building.jpg" alt="">
-                            </div>
-                            <div class="px-4 college-card-content-container py-4">
-                                <div class="college-card-content-header border-b-2 border-slate-400">
-                                    <h1 class="font-bold font-serif text-2xl text-slate-800 ">University of
-                                        Kragujevac
-                                    </h1>
-                                    <ul class="flex flex-row gap-4 pb-2">
-                                        <li class="border-r-2 pr-2 border-slate-400">Country: <span>Serbia</span>
-                                        </li>
-                                        <li class="border-r-2 pr-2 border-slate-400">Degree: <span>MD</span>
-                                        </li>
-                                        <li class="">Course: <span>Medicine</span> </li>
-                                    </ul>
-                                </div>
-                                <div class="college-card-content-about-container">
-                                    <div
-                                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 college-card-content-about">
-                                        <table class="w-full">
-                                            <tr>
-                                                <th>Univer type</th>
-                                                <td>:Public</td>
-                                            </tr>
-                                            <tr>
-                                                <th>University Grade</th>
-                                                <td>:A</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Estd. Year</th>
-                                                <td>:1839</td>
-                                            </tr>
-                                            <tr>
-                                                <th>ECFMG Status</th>
-                                                <td>:Approved</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Course Fee</th>
-                                                <td>:5000 Euros</td>
-                                            </tr>
-                                        </table>
-                                        <table>
-                                            <tr>
-                                                <th>Available Intake</th>
-                                                <td>:Sep intake 2023</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Medium of Course</th>
-                                                <td>:English</td>
-                                            </tr>
-                                            <tr>
-                                                <th>World Rank</th>
-                                                <td>:1401</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Course Duration</th>
-                                                <td>:6 Year of MD, Incl. of internship</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Specialization</th>
-                                                <td>:MD</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                    <button class="bg-lime-600 py-2 px-4 rounded-lg text-white ">Learn More About
-                                        university</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="md:px-40 lg:px-40 px-0 mb-10">
-                        <div
-                            class="college-card flex flex-col md:flex-row lg:flex-row shadow-md rounded-md overflow-hidden bg-white">
-                            <div class="college-img-container ">
-                                <img class=" md:w-60 lg:w-60 w-full h-80"
-                                    src="/public/media-source/countries/serbia/UONSFOM/UONSFOM-building.jpeg" alt="">
-                            </div>
-                            <div class="px-4 college-card-content-container py-4">
-                                <div class="college-card-content-header border-b-2 border-slate-400">
-                                    <h1 class="font-bold font-serif text-2xl text-slate-800 ">University of Novi Sad
-                                        Faculty of Medicine
-                                    </h1>
-                                    <ul class="flex flex-row gap-4 pb-2">
-                                        <li class="border-r-2 pr-2 border-slate-400">Country: <span>Serbia</span>
-                                        </li>
-                                        <li class="border-r-2 pr-2 border-slate-400">Degree: <span>MD</span>
-                                        </li>
-                                        <li class="">Course: <span>Medicine</span> </li>
-                                    </ul>
-                                </div>
-                                <div class="college-card-content-about-container">
-                                    <div
-                                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 college-card-content-about">
-                                        <table class="w-full">
-                                            <tr>
-                                                <th>Univer type</th>
-                                                <td>:Public</td>
-                                            </tr>
-                                            <tr>
-                                                <th>University Grade</th>
-                                                <td>:A</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Estd. Year</th>
-                                                <td>:1960</td>
-                                            </tr>
-                                            <tr>
-                                                <th>ECFMG Status</th>
-                                                <td>:Approved</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Course Fee</th>
-                                                <td>:6500 Euros</td>
-                                            </tr>
-                                        </table>
-                                        <table>
-                                            <tr>
-                                                <th>Available Intake</th>
-                                                <td>:Available</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Medium of Course</th>
-                                                <td>:English</td>
-                                            </tr>
-                                            <tr>
-                                                <th>World Rank</th>
-                                                <td>:Top 1001-1200 </td>
-                                            </tr>
-                                            <tr>
-                                                <th>Course Duration</th>
-                                                <td>:6 Year of MD, Incl. of internship</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Specialization</th>
-                                                <td>:MD</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                    <button class="bg-lime-600 py-2 px-4 rounded-lg text-white ">Learn More About
-                                        university</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- countries card -->
-                <div class="md:bg-white lg:bg-white mx-10 md:rounded-lg lg:rounded-lg md:shadow-md lg:shadow-md">
-                    <%- include('../../countries/countries-card'); -%>
-                </div>
-            </div>
         </div>
         <%- include('../../main-comp/footer'); -%>

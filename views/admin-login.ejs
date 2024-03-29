@@ -1,0 +1,40 @@
+<%- include('main-comp/header'); -%>
+    <div class="min-h-screen w-full bg-green-400 flex flex-col justify-center items-center">
+        <!-- admin login -->
+        <div class="bg-white w-fit rounded-md py-8 px-10">
+            <div class="flex pb-4 flex-row">
+                <img class="h-12 w-" src="../public/media-source/img/favicon.jpg" alt="">
+                <!-- <p class="text-sm text-blue-500 ">Medplasia Medicos</p> -->
+            </div>
+            <div class="">
+                <h1 class="text-xl text-gray-600 font-bold ml-3">Admin Login</h1>
+                <hr class="h-0.5 mt-4 bg-gray-300 border-0 mt-2">
+                <div class="flex flex-col justify-center items-center ">
+                    <h1 class="text-md font-bold text-gray-600 my-2" >login</h1>
+                    <form class="flex flex-col gap-4" action="">
+                        <input class="py-2 px-4 outline-0 border-2 rounded-md border-blue-200" type="text"
+                            placeholder="admin@gmail.com">
+                        <input class="py-2 px-4 outline-0 border-2 rounded-md border-blue-200" type="password"
+                            placeholder="password" name="password" id="password">
+                    </form>
+                    <button class="bg-blue-600 text-white py-2 px-12 rounded-md w-fite mt-6"
+                        type="button">Login</button>
+                </div>
+                <p class="text-gray-400 mt-4 text-sm">Trouble login? <a href="">Click here</a></p>
+            </div>
+            <hr class="h-0.5 my-4 bg-green-100 border-0 mt-2">
+            <!-- Google login -->
+            <div class="flex justify-center   ">
+                <div
+                    class="border-2 w-fit flex flex-row items-center justify-center s gap-2 border-gray-300 px-2 py-2 rounded-md">
+                    <img class="h-6 w-6 p-1" src="../public/media-source/img/google-logo-9808.png" alt="">
+                    <button class="border-l-2 border-gray-300 text-gray-500 px-2" type="button">Login with
+                        google</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </body>
+
+    </html>
